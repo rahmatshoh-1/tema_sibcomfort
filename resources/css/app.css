@@ -1,0 +1,504 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Philosopher";
+    font-weight: bold;
+    src: url("/font/Philosopher-Bold.ttf");
+}
+@font-face {
+    font-family: "Philosopher";
+    font-weight: normal;
+    src: url("/font/Philosopher-Regular.ttf");
+}
+
+body {
+    font-family: "Philosopher", sans-serif !important;
+    overflow-x: hidden;
+    user-select: none;
+    background-color: #393939;
+}
+.bg13 {
+    background: linear-gradient(
+        135deg,
+        #35731d 0%,
+        #78cf52 47.92%,
+        #d5f8c8 99.99%,
+        #6bc100 100%
+    );
+}
+#header {
+    background-image: url("/public/image/bg_header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#header::after,
+#header-main::after {
+    content: "";
+    width: 100%;
+    height: 7rem;
+    position: absolute;
+    bottom: -50px;
+    background-color: #393939;
+    transform: skewY(-2deg);
+    box-shadow: 0px 10px 40px 5px;
+}
+.bgSidesShadow {
+    -webkit-box-shadow: inset 0px -10px 125px 5px rgba(0, 0, 0, 10);
+    -moz-box-shadow: inset 0px -10px 125px 5px rgba(0, 0, 0, 10);
+    box-shadow: inset 0px -10px 125px 5px rgba(0, 0, 0, 10);
+}
+#secondSection::after {
+    content: "";
+    width: 100%;
+    height: 13rem;
+    position: absolute;
+    bottom: -95px;
+    background-color: #393939;
+    transform: skewY(4deg);
+    z-index: 1;
+    -webkit-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+}
+#categorySecondSection {
+    position: relative;
+    z-index: 100;
+}
+#thirdSection::after {
+    content: "";
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    bottom: -85px;
+    background-color: #434343;
+    transform: skewY(4deg);
+    z-index: 1;
+    -webkit-box-shadow: 0px -40px 50px -35px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -40px 50px -35px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -40px 50px -35px rgba(0, 0, 0, 0.75);
+}
+#sibdirector::after {
+    content: "";
+    width: 100%;
+    height: 15rem;
+    position: absolute;
+    bottom: -90px;
+    background-color: #434343;
+    transform: skewY(-5deg);
+    z-index: 1;
+    -webkit-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+}
+#ourProjects::after {
+    content: "";
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    bottom: -110px;
+    background-color: #434343;
+    transform: skewY(3deg);
+    z-index: 1;
+    -webkit-box-shadow: 0px -40px 50px -35px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -40px 50px -35px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -40px 50px -35px rgba(0, 0, 0, 0.75);
+}
+#ourTeam::after {
+    content: "";
+    width: 100%;
+    height: 15rem;
+    position: absolute;
+    bottom: -85px;
+    background-color: #434343;
+    transform: skewY(5deg);
+    z-index: 1;
+    -webkit-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+}
+.inheritPadding {
+    padding: inherit;
+}
+#reviewSec::after {
+    content: "";
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    bottom: -65px;
+    background-color: #000;
+    transform: skewY(-4deg);
+    z-index: 1;
+    -webkit-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+}
+#footer::before {
+    content: "";
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    top: -50px;
+    background-color: #434343;
+    transform: skewY(2deg);
+    z-index: 1;
+}
+
+/* catalog pages */
+
+#moreProject::before {
+    content: "";
+    width: 100%;
+    height: 11rem;
+    position: absolute;
+    top: -110px;
+    background-color: #393939;
+    transform: skewY(3deg);
+    z-index: 1;
+    -webkit-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+}
+/* ipoteka page */
+/* #moreProjectIpoteka::after {
+    content: "";
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    bottom: -25px;
+    background-color: #434343;
+    transform: skewY(-1deg);
+    z-index: 1;
+} */
+#moreProjectIpoteka::before {
+    content: "";
+    width: 100%;
+    height: 11rem;
+    position: absolute;
+    top: -110px;
+    background-color: #393939;
+    transform: skewY(3deg);
+    z-index: 1;
+    -webkit-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 40px 50px -35px rgba(0, 0, 0, 0.75);
+}
+/* ipoteka page end */
+#stoimost-nedvizhimosti_calc-range {
+    -webkit-appearance: none;
+    outline: none;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    top: -8px;
+    position: relative;
+}
+/* hr animation */
+
+hr {
+    position: relative;
+    height: 0.5px;
+    width: 100%;
+    background: #fff5f5;
+    border:#16A34A;
+    box-shadow: 0 0 1.2rem #fff,
+            0 0 .1rem #fff,
+            0 0 2rem #16A34A,
+            0 0 0.2rem #00ff22,
+            0 0 .8rem #00ff22,
+            inset 0 0 0.1rem #14fc33; 
+}
+hr:before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-image: conic-gradient(#16A34A, rgb(0, 71, 10), transparent, #16A34A);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0% {
+        width: 0;
+  }
+    75% {
+        width: 75%;
+    }
+    100% {
+        width: 108%;
+        animation-timing-function: linear;
+        animation-duration: 1s;
+    }
+}
+/* 
+hr {
+    position: relative;
+    height: 2px;
+    border: green;
+    width: 100%;
+    background: green;
+}
+hr:before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-image: conic-gradient(#16a34a, red, transparent, #16a34a);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    75% {
+        width: 75%;
+    }
+    100% {
+        width: 108%;
+        animation-timing-function: linear;
+        animation-duration: 1s;
+    }
+} */
+/* animation end */
+#stoimost-nedvizhimosti_calc-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 14px;
+    cursor: pointer;
+    background-color: #16a34a;
+}
+#house-costCalc::-webkit-outer-spin-button,
+#house-costCalc::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#stoimost-nedvizhimosti_line-range {
+    position: absolute;
+    z-index: 1;
+    width: 0%;
+    height: 4px;
+    background-color: #16a34a;
+}
+
+/* proizvodstvo-page */
+#proizvodstvo-secondBlock::before {
+    content: "";
+    width: 100%;
+    height: 7rem;
+    position: absolute;
+    top: -50px;
+    background-color: #393939;
+    transform: skewY(2deg);
+    z-index: 1;
+    box-shadow: 0px 10px 6px 0px rgba(0, 0, 0, 0.75);
+}
+#proizvodstvo-secondBlock::after {
+    content: "";
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    bottom: -30px;
+    background-color: #393939;
+    transform: skewY(1.8deg);
+    z-index: 1;
+    box-shadow: 0px -10px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+#proizvodstvo-forthBlock::before {
+    content: "";
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    top: -30px;
+    background-color: #393939;
+    transform: skewY(-1.5deg);
+    z-index: 1;
+    box-shadow: 0px 10px 6px 0px rgba(0, 0, 0, 0.75);
+}
+/* #proizvodstvo-forthBlock::after {
+    content: "";
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    bottom: -30px;
+    background-color: #393939;
+    transform: skewY(-1.8deg);
+    z-index: 1;
+} */
+/* proizvodstvo-page end */
+/* map */
+
+#section-map::before {
+    content: "";
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: -45px;
+    z-index: 10;
+    background-color: #393939;
+    transform: skewY(2deg);
+    z-index: 1;
+    -webkit-box-shadow: 0px 40px 50px -35px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 40px 50px -35px rgba(0, 0, 0);
+    box-shadow: 0px 40px 50px -35px rgba(0, 0, 0);
+}
+#section-map1::before {
+    content: "";
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: -45px;
+    z-index: 10;
+    background-color: #030502;
+    transform: skewY(2deg);
+    z-index: 1;
+}
+/* map end */
+/* slider */
+input[type="range"] {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    /* creating a custom design */
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    /*  overflow: hidden;  remove this line*/
+
+    /* New additions */
+    height: 6px;
+    background: #ccc;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    /* creating a custom design */
+    height: 15px;
+    width: 10px;
+    background-color: #16a34a;
+    margin-top: 10px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+    height: 15px;
+    width: 10px;
+    background-color: #16a34a;
+    margin-top: 10px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+/* Hover, active & focus Thumb: Webkit */
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 5px rgba(0, 255, 85, 0.1);
+}
+input[type="range"]:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 5px rgba(0, 255, 85, 0.2);
+}
+input[type="range"]:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 5px rgba(0, 255, 85, 0.2);
+}
+
+/* Hover, active & focus Thumb: Firfox */
+
+input[type="range"]::-moz-range-thumb:hover {
+    box-shadow: 0 0 0 5px rgba(0, 255, 85, 0.1);
+}
+input[type="range"]:active::-moz-range-thumb {
+    box-shadow: 0 0 0 5px rgba(0, 255, 85, 0.2);
+}
+input[type="range"]:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 5px rgba(0, 255, 85, 0.2);
+}
+
+/*=============
+Calc custom
+=========================*/
+
+.range {
+    height: 2rem;
+    width: 100%;
+}
+
+.value {
+    font-size: 26px;
+}
+
+/* disk */
+/* .disk_image {
+    -webkit-animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    animation: spin 20s linear infinite;
+}
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+} */
+/* disk animation */
+
+/*  amocrm plugin design */
+.amo-button-holder.amo-vertical {
+    z-index: 9999 !important;
+}
+/* amocrm plugin design */
+ul.nav-menu {
+    @apply lg:flex hidden justify-end items-center lg:relative absolute z-50 lg:bg-transparent bg-black/90 w-full rounded-b-md lg:top-0 top-16;
+}
+
+ul.nav-menu li {
+    @apply lg:px-0 px-4 lg:py-0 py-3;
+}
+
+.vs__dropdown-toggle {
+    @apply !bg-white;
+}
+
+.form-controls {
+    @apply block w-full rounded-md border-0 py-3 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#16a34a] sm:leading-6;
+}
+
+.vs__search {
+    @apply !py-[0.4rem];
+}
+
+.dash-btn {
+    @apply rounded-md bg-[#16a34a] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#16a34a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#16a34a] disabled:bg-gray-400;
+}
+
+.review-content {
+    @apply sm:w-full my-9 h-36 flex items-center justify-center;
+}
+
+.review-content figure {
+    @apply w-full h-full;
+}
+
+.green-button {
+    @apply w-full mt-6 rounded flex items-center justify-center transition duration-300 bg-[#16A34A] !px-5 !py-2.5 text-center text-base font-medium text-white hover:bg-[#178e43] focus:outline-none focus:ring-4 focus:ring-[#d3ffc4];
+}
+
+@media screen and (min-width: 1921px) {
+    #app {
+        width: 1921px;
+        margin: 0 auto;
+    }
+}

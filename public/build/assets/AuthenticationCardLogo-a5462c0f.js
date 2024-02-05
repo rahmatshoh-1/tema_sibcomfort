@@ -1,0 +1,1 @@
+import{o as s,c as t,w as a,u as e,j as o,a as r}from"./app-00f1f0af.js";const _="/build/assets/logo_dark-677f9349.svg",c=r("img",{src:_,alt:""},null,-1),p={__name:"AuthenticationCardLogo",setup(n){return(i,u)=>(s(),t(e(o),{href:"/"},{default:a(()=>[c]),_:1}))}};export{p as _};
